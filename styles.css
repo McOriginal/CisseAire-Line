@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Convergence&display=swap');
+
+
+:root{
+    --primary-color: #2887ff;
+    --primary-color-darck: #2476da;
+    --text-dack: #0a0a0a;
+    --text-light: #737373;
+    --extra-light: #f3f4f6;
+    --orange-color: #FFB4A2;
+    --violet-color: #4B164C;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --font: 'Convergence', sans-serif;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    font-family: var(--font);
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 1.5rem;
+}
+
+
+.nav__container{
+    background: var(--extra-light);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 3.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+
+
+.nav__container .logo{
+    max-width: 25%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav__container .logo_img{
+    width: 40%;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.nav__container .logo_img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav__container .logo .logo_s1{
+    color: var(--white);
+    font-size: clamp(0.3rem, 0.8rem, 1.2rem);
+    font-weight: 800;
+    margin-right: 0.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.nav__container .logo .logo_s2{
+    color: var(--white);
+    font-size: clamp(0.5rem, 0.6rem, 1.2rem);
+    font-weight: 800;
+    color: var(--violet-color);
+    cursor: pointer;
+}
+
+
+.nav__container .nav__links{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+ .nav__links li a{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: clamp(0.3rem,0.6rem, 0.7rem);
+    font-family: "ABeeZee", serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+ .nav__links li a:hover{
+    color: var(--violet-color);
+}
+
+
+
+.nav__container button{
+    display: block;
+    width: 4rem;
+    padding: 10px;
+    font-size: clamp(1rem, calc(2vw + 1), 1rem);
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav__container button:hover{
+    background: var(--primary-color-darck);
+    color: var(--white);
+}
+
+
+.nav__container .menu, 
+.nav__container .close{
+    display: none;
+}
+
+
+/* --------------------------------------- */
+/* ----------Header Style----------------------------- */
+
+.header{
+    min-height: 120vh;
+    background: url("./images/sky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header img{
+    position: absolute;
+    right: 0%;
+    top: 15%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+ .header_content{
+    height: 100vh;
+    padding-top: 20%;
+}
+
+.header_content h2{
+    font-size: clamp(1rem, calc(3vw + 1rem), 2rem);
+    color: var(--primary-color);
+    margin-left: 0.4rem;
+}
+
+.header_content h3{
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+    color: var(--violet-color);
+}
+
+.btn{
+    padding: 0.5rem 0.1rem;
+    outline: none;
+    width: 30%;
+    font-size: clamp(0.3, 0.5rem , 1rem);
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.2rem;
+    margin: 2rem 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+    color: var(--white);
+}
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+
+/* ------------Popular Destinations--------------------------- */
+/* --------------------------------------- */
+
+.destination{
+    margin: 5rem 0;
+    padding: 1rem;
+}
+
+.destination h3{
+    font-size: clamp(1rem, 1.3rem, 1.5rem );
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.destination .text{
+    font-size: clamp(0.8rem, 0.5rem, 1.2rem);
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 70vh;
+    /* background: #000; */
+  }
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+
+
+.destination .card{
+    width: 3rem;
+    height: 250px;
+    width: 350px;
+    transition: all 0.5s ease-in-out;
+}
+
+ .card .card_img{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+ }
+
+
+ .card .card_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+ }
+
+ .card .card_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    margin: 1rem;
+ }
+
+.card_details h4{
+    font-size: 0.7rem;
+    color: var(--primary-color);
+}
+
+.card_details p{
+    font-size: 0.7rem;
+    color: var(--violet-color);
+}
+
+.card_details .badge{
+    background: var(--primary-color);
+    padding: 5px;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 2px var(--primary-color-darck);
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    justify-self: center;
+    align-items: center;
+}
+
+.badge i{
+    color: var(--white);
+    font-size: 0.5rem;
+}
+
+.badge span{
+    color: var(--white);
+    font-size: 0.6rem;
+}
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+
+
+
+
+
+
+/* #######################################"" */
+/* #######################################"" */
+/* Media Query  */
+/* #######################################"" */
+
+@media screen and (max-width: 750px) {
+
+
+    .nav__container .logo{
+        width: 1rem;
+    }
+
+    .nav__container .logo{
+        min-width: 53%;
+    }
+
+
+    .nav__btns{
+        display: flex;
+        background: #ca3333;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .nav__container .menu{
+        display: block;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+    }
+    .nav__container .close{
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        display: block;
+        color: var(--white);
+        font-size: 1.2rem;
+        z-index: 1;
+    }
+
+
+    .nav__container .nav__links{
+        display: none;
+    }
+    .nav__links_active{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100dvh;
+        background: var(--primary-color-darck);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__links li {
+        width: 100%;
+        padding: 0.4rem;
+    }
+    .nav__links li a{
+        text-align: center;
+        color: var(--white);
+        width: 100%;
+        display: block;
+    }
+    .nav__btns li a:hover{
+        background: var(--violet-color);
+    }
+
+    .header img{
+        top: 30%;
+        max-width: 60%;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .nav__container button{
+        max-width: 2rem;
+        font-size: 0.5rem;
+    }
+
+    .nav__container .logo .logo_s1,
+    .nav__container .logo .logo_s2{
+        font-size: 0.4rem;
+    }
+
+    .header_content h2{
+        font-size: 1rem;
+    }
+    .header_content h3{
+        font-size: 0.5rem;
+    }
+
+    .btn{
+        font-size: 0.4rem;
+    }
+
+    .header_content{
+        margin-top: 70%;
+    }
+
+
+
+}
