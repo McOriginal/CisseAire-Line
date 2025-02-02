@@ -25,6 +25,18 @@
     font-family: var(--font);
 }
 
+.title{
+    font-size: clamp(1rem, 1.3rem, 1.5rem );
+    color: var(--primary-color);
+    margin: 1rem ;
+}
+
+ .text{
+    font-size: clamp(0.8rem, 0.5rem, 1.2rem);
+    color: var(--text-light);
+    margin: 1rem;
+}
+
 html{
     scroll-behavior: smooth;
     font-size: 1.5rem;
@@ -208,22 +220,11 @@ html{
     padding: 1rem;
 }
 
-.destination h3{
-    font-size: clamp(1rem, 1.3rem, 1.5rem );
-    color: var(--primary-color);
-    margin: 1rem 0;
-}
 
-.destination .text{
-    font-size: clamp(0.8rem, 0.5rem, 1.2rem);
-    color: var(--text-light);
-    margin-bottom: 2rem;
-}
 
 .swiper {
     width: 100%;
     height: 70vh;
-    /* background: #000; */
   }
 
 .swiper-slide {
@@ -281,12 +282,13 @@ html{
  }
 
 .card_details h4{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: var(--primary-color);
 }
 
 .card_details p{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+    text-align: left;
     color: var(--violet-color);
 }
 
@@ -314,6 +316,190 @@ html{
 }
 
 /* --------------------------------------- */
+/* --------------------------------------- */
+
+
+
+
+/* --------------------------------------- */
+/* -----------Services---------------------------- */
+
+.bus_services{
+    margin: 2rem auto;
+}
+
+.bus_services .service_detail img{
+    max-width: 70%;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+.service_detail h4{
+    color: var(--violet-color);
+}
+
+.service_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.service_cards .service_card{
+    width: 260px;
+    height: 270px;
+    overflow: hidden;
+    background: var(--white);
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+.service_cards .service_card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+ .card_avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0.2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--violet-color);;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card_avatar i{
+    color: var(--white);
+}
+
+
+.service_card h4{
+    font-size: clamp(0.5rem, 0.7rem, 1rem);
+    text-align: center;
+    margin: 1rem auto;
+}
+
+
+.service_card p{
+    font-size: clamp(0.5rem, 0.7rem, 1rem);
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-light);
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.service_detail .image{
+    max-width: 100%;
+    height: 80vh;
+    border-radius: 1rem;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+
+
+/* --------------------------------------- */
+/* ------------ABOUT US--------------------------- */
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 15% 0;
+}
+
+
+.about .image{
+    width: 40%;
+    height: 100dvh;
+    border-radius: 1rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.about .image:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
+.about .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.about .text_content{
+    width: 50%;
+}
+
+.text_content h2{
+    font-size: clamp(1rem, 1.2rem, 1.5rem);
+    color: var(--violet-color);
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.text_content p{
+    margin: 1rem 0;
+    font-size: clamp(0.4rem, 0.8rem, 1rem);
+    color: var(--text-light);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+
+.cards .card{
+    width: 260px;
+    height: 200px;
+    overflow: hidden;
+    background: var(--white);
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+.cards .card h4{
+    margin: 0.5rem auto;
+    color: var(--violet-color);
+    font-size: clamp(1rem, 1.5rem, 1.6rem);
+}
+
+.cards .card p{
+    color: var(--text-dack);
+    opacity: 0.7;
+    font-size: 0.7rem;
+}
 /* --------------------------------------- */
 
 
@@ -397,6 +583,16 @@ html{
         max-width: 60%;
     }
     
+    .about{
+        flex-direction: column;
+    }
+
+    .about .image,
+    .about .text_content{
+        width: 70%;
+        margin: 1rem;
+        overflow: hidden;
+    }
     
 }
 
